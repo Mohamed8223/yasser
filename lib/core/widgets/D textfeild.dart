@@ -2,7 +2,7 @@
 
  import 'package:flutter/material.dart';
 
-Widget buildTextField({required String hintText, bool obscureText = false}) {
+Widget buildTextField({required String hintText, bool obscureText = false,TextEditingController? controller}) {
     return TextField(
       obscureText: obscureText,
       decoration: InputDecoration(

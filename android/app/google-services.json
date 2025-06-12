@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577748585756",
+    "project_id": "skin-2f2d2",
+    "storage_bucket": "skin-2f2d2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577748585756:android:862339f223e8a971fb3ed9",
+        "android_client_info": {
+          "package_name": "com.example.skin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJOjJpz6_Ict0AkUBKxLBh7HU8XsAg3tI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

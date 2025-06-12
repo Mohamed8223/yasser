@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:skin/Features/Home/data/Disease_Model.dart';
 import 'package:skin/Features/Home/presentation/view/widget/Disease_Card.dart';
@@ -5,7 +7,7 @@ import 'package:skin/core/constant.dart';
 
 class HomeWidget extends StatelessWidget{
   const HomeWidget({super.key});
-
+   
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -27,11 +29,7 @@ class HomeWidget extends StatelessWidget{
                         color: kcolor1,
                       ),
                     ),
-                    const CircleAvatar(
-                      radius: 25,
-                      backgroundImage: NetworkImage(
-                          'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500'),
-                    ),
+                   
                   ],
                 ),
                 const SizedBox(height: 20),

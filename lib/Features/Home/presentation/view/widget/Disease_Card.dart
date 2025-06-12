@@ -1,7 +1,9 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
+import 'package:skin/Features/Disease/presentation/view/Disease_view.dart';
 import 'package:skin/Features/Home/data/Disease_Model.dart';
+import 'package:skin/core/widgets/D%20bottom.dart';
 
 class DiseaseCard extends StatelessWidget {
   final DiseaseModel disease;
@@ -60,37 +62,18 @@ class DiseaseCard extends StatelessWidget {
           ),// Pushes buttons to the bottom
 
           // Action Buttons
-          _buildActionButton('Read More', buttonColor,13),
+          buildActionButton('Read More', buttonColor,13,() {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => DiseaseView(title: disease.name,textinfo: disease.textinfo,imagepath: disease.imageUrl,),));
+          },),
           const SizedBox(height: 2),
-          _buildActionButton('Talk with nchatbot', buttonColor,13),
+          buildActionButton('Talk with nchatbot', buttonColor,13,() {
+            
+          },),
         ],
       ),
     );
   }
 
   // Helper widget for creating the styled buttons.
-  Widget _buildActionButton(String text, Color color,double size) {
-    return SizedBox(
-      width: double.infinity,
-      child: ElevatedButton(
-        onPressed: () {},
-        style: ElevatedButton.styleFrom(
-          backgroundColor: color,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12.0),
-          ),
-          padding: const EdgeInsets.symmetric(vertical: 10),
-        ),
-        child: Text(
-          text,
-          textAlign: TextAlign.center,
-          style:  TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: size,
-          ),
-        ),
-      ),
-    );
-  }
+ 
 }
