@@ -4,6 +4,7 @@
 
 Widget buildTextField({required String hintText, bool obscureText = false,TextEditingController? controller}) {
     return TextField(
+      controller: controller,
       obscureText: obscureText,
       decoration: InputDecoration(
         hintText: hintText,
