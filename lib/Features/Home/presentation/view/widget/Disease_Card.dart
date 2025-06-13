@@ -66,7 +66,7 @@ class DiseaseCard extends StatelessWidget {
             Navigator.push(context, MaterialPageRoute(builder: (context) => DiseaseView(title: disease.name,textinfo: disease.textinfo,imagepath: disease.imageUrl,),));
           },),
           const SizedBox(height: 2),
-          buildActionButton('Talk with nchatbot', buttonColor,13,() {
+          buildActionButton('Talk with chatbot', buttonColor,13,() {
             
           },),
         ],

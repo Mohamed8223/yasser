@@ -132,7 +132,7 @@ class _SignWidgetState extends State<SignWidget> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(3.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -147,7 +147,7 @@ class _SignWidgetState extends State<SignWidget> {
                       color: kcolor1,
                     ),
                   ),
-                  const SizedBox(height: 24.0),
+                  Gap(size.height*0.0),
                   Row(
                     children: [
                       Expanded(
@@ -165,7 +165,7 @@ class _SignWidgetState extends State<SignWidget> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 16.0),
+                  Gap(size.height*0.01),
                   Row(
                     children: [
                       Expanded(
@@ -176,7 +176,7 @@ class _SignWidgetState extends State<SignWidget> {
                                 : _selectedDate!.day.toString(),
                             onTap: () => _selectDate(context),
                           )),
-                      const SizedBox(width: 12.0),
+                     Gap(size.width*0.005),
                       Expanded(
                           flex: 3,
                           child: _buildDateField(
@@ -185,7 +185,7 @@ class _SignWidgetState extends State<SignWidget> {
                                 : DateFormat.MMM().format(_selectedDate!),
                             onTap: () => _selectDate(context),
                           )),
-                      const SizedBox(width: 12.0),
+                      Gap(size.width*0.005),
                       Expanded(
                           flex: 3,
                           child: _buildDateField(

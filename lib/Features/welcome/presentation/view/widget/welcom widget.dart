@@ -17,51 +17,53 @@ class Welcomwidget extends StatelessWidget {
         child: Center(
       child: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Card(
-              shape: CircleBorder(),
-              elevation: 8,
-              shadowColor: Colors.black,
-              child: CircleAvatar(
-                backgroundImage: AssetImage("assets/images/logo.jpg"),
-                radius: width * 0.3,
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Card(
+                shape: CircleBorder(),
+                elevation: 8,
+                shadowColor: Colors.black,
+                child: CircleAvatar(
+                  backgroundImage: AssetImage("assets/images/logo.jpg"),
+                  radius: width * 0.3,
+                ),
               ),
-            ),
-            Gap(height * 0.02),
-            defaultText(
-                text: 'Skin Diseases',
-                color: kcolor1,
-                size: width * 0.1,
-                fontWeight: FontWeight.bold),
-            Gap(height * 0.02),
-            defaultText(
-                text: "Your clinic in any Time For skin Diseases",
-                color: Colors.white,
-                size: width * 0.07,
-                fontWeight: FontWeight.normal),
-            Gap(height * 0.02),
-            ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: WidgetStatePropertyAll(Colors.white),
-                enableFeedback: true,
-              ),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => WelcomDetialsView(),
-                    ));
-              },
-              child: defaultText(
-                  text: "Get Started",
+              Gap(height * 0.02),
+              defaultText(
+                  text: 'Skin Diseases',
                   color: kcolor1,
-                  size: width * 0.08,
+                  size: width * 0.1,
                   fontWeight: FontWeight.bold),
-            )
-          ],
+              Gap(height * 0.02),
+              defaultText(
+                  text: "Your clinic in any Time For skin Diseases",
+                  color: Colors.white,
+                  size: width * 0.07,
+                  fontWeight: FontWeight.normal),
+              Gap(height * 0.02),
+              ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: WidgetStatePropertyAll(Colors.white),
+                  enableFeedback: true,
+                ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => WelcomDetialsView(),
+                      ));
+                },
+                child: defaultText(
+                    text: "Get Started",
+                    color: kcolor1,
+                    size: width * 0.08,
+                    fontWeight: FontWeight.bold),
+              )
+            ],
+          ),
         ),
       ),
     ));

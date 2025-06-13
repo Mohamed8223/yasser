@@ -92,7 +92,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                   crossAxisCount: 2,
                   crossAxisSpacing: 16.0,
                   mainAxisSpacing: 16.0,
-                  childAspectRatio: 0.5,
+                  childAspectRatio: 0.33,
                 ),
                 itemBuilder: (context, index) {
                   return DiseaseCard(disease: _filteredDiseases[index]);

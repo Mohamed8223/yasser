@@ -170,7 +170,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                     children: [
                       const Text(
                         'Do You have Account? ',
-                        style: TextStyle(color: kcolor1, fontSize: 16),
+                        style: TextStyle(color: kcolor1, fontSize: 12),
                       ),
                       GestureDetector(
                         onTap: () {},
